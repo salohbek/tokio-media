@@ -361,22 +361,30 @@ https://www.tooplate.com/view/2119-gymso-fitness
   /*---------------------------------------
      HERO              
   -----------------------------------------*/
-
+  #contact{
+    padding-top: 60px;
+    background-image: linear-gradient(180deg, #171819,#ffffff);
+  }
   .hero {
-    background-image: url('../images/tokyo.jpg');
+    /* background-image: url('../images/tokyo.jpg'); */
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     vertical-align: middle;
     min-height: 100vh;
     position: relative;
+    width: 100%;
+height: 80vh;
+overflow: hidden;  
   }
 
 
   /*---------------------------------------
      CLASS               
   -----------------------------------------*/
-
+  .service {
+    background-image: linear-gradient(180deg, #171819, #E7E9EB);
+  }
   .class-info {
     background: var(--white-color);
     box-shadow: 6px 0 38px rgba(20,20,20,0.10);
@@ -483,7 +491,6 @@ https://www.tooplate.com/view/2119-gymso-fitness
   }
 
   .about-working-hours {
-    border-left: 2px solid;
     padding-left: 3.5rem;
   }
 
@@ -585,7 +592,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   }
 
   .contact .fa,
-  .site-footer .fa {
+  .site-footer .envelope {
     color: var(--primary-color);
   }
 
@@ -593,7 +600,14 @@ https://www.tooplate.com/view/2119-gymso-fitness
   /*---------------------------------------
      SOCIAL ICON              
   -----------------------------------------*/
-
+  .hero{
+     
+}
+#myVideo{
+    position: absolute;
+width: 100%;
+z-index: -2;
+}
   .social-icon {
     position: relative;
     padding: 0;
@@ -605,18 +619,35 @@ https://www.tooplate.com/view/2119-gymso-fitness
     list-style: none;
   }
 
-  .social-icon li a {
+  .social-icon li .fa-facebook {
     text-decoration: none;
     display: inline-block;
-    color: var(--p-color);
+    color: #1f2bd1;
     font-size: var(--p-font-size);
     font-weight: var(--font-weight-bold);
     margin: 5px 10px;
     text-align: center;
   }
-
+  .social-icon li .fa-telegram {
+    text-decoration: none;
+    display: inline-block;
+    color: #289fee;
+    font-size: var(--p-font-size);
+    font-weight: var(--font-weight-bold);
+    margin: 5px 10px;
+    text-align: center;
+  }
+  .social-icon li .fa-instagram {
+    text-decoration: none;
+    display: inline-block;
+    color: #833AB4;
+    font-size: var(--p-font-size);
+    font-weight: var(--font-weight-bold);
+    margin: 5px 10px;
+    text-align: center;
+  }
   .social-icon li a:hover {
-    color: var(--primary-color);
+    color: red;
   }
 
 
