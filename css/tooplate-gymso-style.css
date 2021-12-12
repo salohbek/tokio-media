@@ -64,6 +64,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   body {
     background: var(--white-color);
     font-family: var(--base-font-family);
+    width: 100%;
   }
 
 
@@ -248,18 +249,27 @@ https://www.tooplate.com/view/2119-gymso-fitness
   -----------------------------------------*/
 
   .feature {
-    background: var(--dark-color);
+    background: #1d1d2d;
     padding: 5rem 0;
   }
-
+  .feature p{
+    color: rgb(221, 220, 217);
+  }
+.service_card{
+  width: 60px;
+  transform: translateY(-30px);
+}
 
   /*---------------------------------------
      MENU             
   -----------------------------------------*/
 
   .navbar {
-    background: var(--dark-color);
+    background: #1d1d2d;
     padding: 1rem;
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -363,7 +373,8 @@ https://www.tooplate.com/view/2119-gymso-fitness
   -----------------------------------------*/
   #contact{
     padding-top: 60px;
-    background-image: linear-gradient(180deg, #171819,#ffffff);
+    overflow: hidden;  
+    background-image: linear-gradient(180deg, #1d1d2d,#ffffff);
   }
   .hero {
     /* background-image: url('../images/tokyo.jpg'); */
@@ -377,13 +388,25 @@ https://www.tooplate.com/view/2119-gymso-fitness
 height: 80vh;
 overflow: hidden;  
   }
-
+.input_app{
+  border:0;
+  width: 100%;
+  border-bottom: 2px solid #1d1d2d;
+  padding: 10px;
+}
+.sendEmail{
+  background: #1d1d2d;
+  color: white;
+  border:2px solid white;
+  padding: 4px 10px 4px 10px;
+  border-radius: 12px; 
+}
 
   /*---------------------------------------
      CLASS               
   -----------------------------------------*/
   .service {
-    background-image: linear-gradient(180deg, #171819, #E7E9EB);
+    background-image: linear-gradient(180deg, #1d1d2d, #E7E9EB);
   }
   .class-info {
     background: var(--white-color);
@@ -492,13 +515,24 @@ overflow: hidden;
 
   .about-working-hours {
     padding-left: 3.5rem;
+    width: 100%;
+    height: 100%;
+
   }
 
   .about-working-hours strong {
     color: var(--white-color);
     opacity: 0.85;
   }
-
+  .sertificate-show{
+    color: rgb(250, 15, 15);
+    width: 50%;
+  }
+  .sertificate-show:hover{
+    color: rgb(250, 15, 15);
+    border-bottom: 1px solid red;
+    cursor: pointer;
+  }
   .team-thumb {
     position: relative;
   }
@@ -600,9 +634,6 @@ overflow: hidden;
   /*---------------------------------------
      SOCIAL ICON              
   -----------------------------------------*/
-  .hero{
-     
-}
 #myVideo{
     position: absolute;
 width: 100%;
