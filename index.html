@@ -25,10 +25,10 @@
 <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
 
     <!-- MENU BAR -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg py-1">
         <div class="container">
 
-            <a class="navbar-brand" href="index.html"><img width="120" src="./images/logo.png" alt=""></a>
+            <a class="navbar-brand" href="index.html"><img width="200" src="./images/logo2.png" alt=""></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,9 +73,9 @@
     <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
 
         <div class="bg-overlay"></div>
-        <video autoplay muted loop id="myVideo">
+        <!-- <video autoplay muted loop id="myVideo">
             <source src="./images/tokyoshorts.mp4" type="video/mp4">
-        </video>
+        </video> -->
         <div class="container">
             <div class="row">
 
@@ -83,12 +83,15 @@
                     <div class="hero-text mt-5">
 
 
-                        <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Маркетинговое агентство полного цикла</h1>
+                        <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Медиа агентство полного цикла
+                        </h1>
 
-                        <h6 class="text-white" data-aos="fade-up" data-aos-delay="300">Уверенно развивайтесь в социальных сетях!</h6>
+                        <h6 class="text-white" data-aos="fade-up" data-aos-delay="300">Уверенно развивайтесь в
+                            социальных сетях!</h6>
                         <!-- <a href="#feature" class="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600">Get started</a> -->
 
-                        <a href="#application" style="background-color: #1d1d2d;color: white;border: 1px solid white;" class="btn font-weight-bold custom-btn bordered rounded-pill mt-3" data-aos="fade-up"
+                        <a href="#application" style="background-color: #03989E;color: white;border: 1px solid white;"
+                            class="btn font-weight-bold custom-btn bordered rounded-pill mt-3" data-aos="fade-up"
                             data-aos-delay="700">Получить консультацию</a>
 
                     </div>
@@ -114,59 +117,78 @@
                 <div class="d-flex flex-column justify-content-center  mr-lg-5 col-lg-5 col-md-6 col-12">
                     <h2 class="mb-3 text-white" data-aos="fade-up">О нашем агентстве</h2>
 
-                    <small class="mb-4 text-white" data-aos="fade-up">Мы полноценное маркетинговое агенство, которое уже на протяжении долгого времени работает на территории Узбекистана и СНГ, ощущающая свою силу заходя в самые дальние уголки бизнеса. С первого дня работы нами движет интерес, как устроен рабочий процесс клиента и как можно сделать его лучше!
+                    <small class="mb-4 text-white" data-aos="fade-up">Мы полноценное маркетинговое агенство, которое уже
+                        на протяжении долгого времени работает на территории Узбекистана и СНГ, ощущающая свою силу
+                        заходя в самые дальние уголки бизнеса. С первого дня работы нами движет интерес, как устроен
+                        рабочий процесс клиента и как можно сделать его лучше!
 
-                        Наша команда подходит к разработке максимально комплексно. Прежде всего мы тщательно анализируем тенденции рынка и конкурентов, а потом будем продвигать ваш бизнес на высший уровень</small>
+                        Наша команда подходит к разработке максимально комплексно. Прежде всего мы тщательно анализируем
+                        тенденции рынка и конкурентов, а потом будем продвигать ваш бизнес на высший уровень</small>
 
 
-                    <span class="sertificate-show" onclick="isHidden()" data-aos="fade-up" data-aos-delay="300">Наши сертификаты</span>
+                    <a class="text-light" href="#portfolio">Наши портфолио</a>
                 </div>
-                <div class="row mt-3" style="display: none;" id="sertificate" data-aos="fade-up" data-aos-delay="200">
-                    <div class="col-lg-3 col-md-3 col-sm-5 col-12"><img style="width:100%" src="./images/logo.png"
-                            alt=""></div>
-                    <div class="col-lg-3 col-md-3 col-sm-5 col-12"><img style="width:100%" src="./images/logo.png"
-                            alt=""></div>
-                    <div class="col-lg-3 col-md-3 col-sm-5 col-12"><img style="width:100%" src="./images/logo.png"
-                            alt=""></div>
-                    <div class="col-lg-3 col-md-3 col-sm-5 col-12"><img style="width:100%" src="./images/logo.png"
-                            alt=""></div>
-                </div>
-
 
             </div>
             <div class="row text-light mt-lg-5">
                 <div class="col-12 col-lg-12 col-md-12 my-5">
                     <h2>Что вы получите:</h2>
                 </div>
-                <div class="col-lg-4 col-md-4 col-6 mb-4">
-                    <div class="d-flex" style="justify-content: space-between;"><h4 class="d-inline-block">Качество</h4><img class="service_card" src="./images/class/diamond.png" alt=""></div>
-                    <p>Мы гарантируем качественное выполнение работы, неповторимый дизайн и точное следование дедлайнам</p>
+                <div class="col-lg-3 col-md-3 col-6 mb-4">
+                    <div class="d-flex" style="justify-content: space-between;">
+                        <h4 class="d-inline-block">Качество</h4><img class="service_card"
+                            src="./images/class/diamond.png" alt="">
+                    </div>
+                    <small>Мы гарантируем качественное выполнение работы, неповторимый дизайн и точное следование
+                        дедлайнам</small>
                 </div>
-                <div class="col-lg-4 col-md-4 col-6 mb-4">
-                    <div class="d-flex" style="justify-content: space-between;"><h4 class="d-inline-block">Результат</h4><img class="service_card" src="./images/class/target.png" alt=""></div>
-                    <p>Мы работаем на результат, поэтому обговариваем все требования и пожелания клиента, чтобы дойти до конечной цели</p>
+                <div class="col-lg-3 col-md-3 col-6 mb-4">
+                    <div class="d-flex" style="justify-content: space-between;">
+                        <h4 class="d-inline-block">Результат</h4><img class="service_card"
+                            src="./images/class/target.png" alt="">
+                    </div>
+                    <small>Мы работаем на результат, поэтому обговариваем все требования и пожелания клиента, чтобы
+                        дойти до конечной цели</small>
                 </div>
-                <div class="col-lg-4 col-md-4 col-6 mb-4">
-                    <div class="d-flex" style="justify-content: space-between;"><h4  class="d-inline-block">Стратегия</h4><img class="service_card" src="./images/class/laptop.png" alt=""></div>
-                    <p>Мы разработаем полноценную стратегию благодаря которой ваш бизнес станет надёжнее и будет расти</p>
+                <div class="col-lg-3 col-md-3 col-6 mb-4">
+                    <div class="d-flex" style="justify-content: space-between;">
+                        <h4 class="d-inline-block">Стратегия</h4><img class="service_card"
+                            src="./images/class/laptop.png" alt="">
+                    </div>
+                    <small>Мы разработаем полноценную стратегию благодаря которой ваш бизнес станет надёжнее и будет
+                        расти</small>
                 </div>
-                <div class="col-lg-4 col-md-4 col-6 mb-4">
-                    <div class="d-flex" style="justify-content: space-between;"><h4 class="d-inline-block">Скорость</h4><img class="service_card" src="./images/class/racet.png" alt=""></div>
-                    <p>Мы работаем быстро и оперативно, укладываясь в короткие сроки с наилучшим результатом</p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-6 mb-4">
-                    <div class="d-flex" style="justify-content: space-between;"><h4 class="d-inline-block">Горячие клиенты</h4><img class="service_card" src="./images/class/laptop.png" alt=""></div>
-                    <p>Приводим целевую аудиторию которая ищет ваш продукт или услугу и готова стать вашими клиентами</p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-6 mb-4">
-                    <div class="d-flex" style="justify-content: space-between;"><h4 class="d-inline-block">Честность</h4><img class="service_card" src="./images/class/racet.png" alt=""></div>
-                    <p>На протяжении всей работы вы будете видеть наши действия, получать отчеты о проделанной работе и росте вашего бизнеса</p>
+                <div class="col-lg-3 col-md-3 col-6 mb-4">
+                    <div class="d-flex" style="justify-content: space-between;">
+                        <h4 class="d-inline-block">Скорость</h4><img class="service_card" src="./images/class/racet.png"
+                            alt="">
+                    </div>
+                    <small>Мы работаем быстро и оперативно, укладываясь в короткие сроки с наилучшим результатом</small>
                 </div>
             </div>
         </div>
         </div>
     </section>
-
+    <section class="portfolio bg-light py-5" id="portfolio">
+        <div class="">
+            <h2 class="text-center mb-5 text-light d-flex justify-content-center">Наши портфолио</h2><a
+                class="d-flex justify-content-end" href="portfolio.html">podrobno</a>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><iframe src="https://www.youtube.com/embed/9MSX87GAqoQ" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item"><iframe src="https://www.youtube.com/embed/UXHyh2_820g" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item"><iframe src="https://www.youtube.com/embed/t6gtlQa3Mrs" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+        </div>
+    </section>
 
     <!-- ABOUT -->
     <section class="about section" id="application">
@@ -174,9 +196,10 @@
             <div class="row">
 
                 <div class="mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
-                    <p style="font-size: 38px;" class="mb-4 mt-5" data-aos="fade-up" data-aos-delay="300">Оставьте заявку чтобы получить <span class="text-danger">БЕСПЛАТНУЮ</span> консультацию</p>
+                    <p style="font-size: 38px;" class="mb-4 mt-5" data-aos="fade-up" data-aos-delay="300">Оставьте
+                        заявку чтобы получить <span class="text-danger">БЕСПЛАТНУЮ</span> консультацию</p>
 
-                    </div>
+                </div>
 
                 <div class="ml-lg-auto col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="700">
                     <label>ФИО</label><br>
@@ -270,6 +293,8 @@
     <!-- SCHEDULE -->
     <section class="schedule section bg-light" id="schedule">
         <h2 class="text-center mb-5">Наши клиенты</h2>
+        <button class="customNextBtn border-0">	&#8594;</button>
+        <button class="customPrevBtn border-0">	&#8592;</button>
         <div class="owl-carousel owl-theme">
             <div class="item"><img src="images/class/ukr.png" alt=""></div>
             <div class="item"><img src="images/class/usa.png" alt=""></div>
@@ -281,24 +306,22 @@
     <!-- CONTACT -->
     <section class="contact section" id="contact">
         <div class="contact-number row d-flex text-light" data-aos="fade-up" data-aos-delay="900">
-            <div class="col-lg-2 col-md-2 m-0 p-0 col-9 mx-5 d-inline-block align-items-center mt-3"><a
-                    class="navbar-brand" href="index.html"><img width="200" src="./images/logo.png" alt=""></a></div>
-            <div class="col-lg-2 col-md-2 m-0 p-0 col-9 mx-5 d-inline-block text-align-center">
-                <h4>Офис:</h4 <p>г. Ташкент Олмазарский р.
-                Каракамыш 1/1,
-                ул. Тараккиет, 12</p>
+            <div class="col-lg-2 col-md-2 m-0 p-0 col-9 ml-4 d-inline-block align-items-center mt-3"><a
+                    class="navbar-brand" href="index.html"><img width="200" src="./images/logo3.png" alt="scx"></a></div>
+            <div class="col-lg-3 col-md-2 m-0 p-0 col-9 ml-4 d-inline-block text-align-center">
+                <h4>Офис:</h4 <p>г. Ташкент Мирзо Улугбекский район, Зиёлилар 9, рядом с Университетом Инха</p>
             </div>
-            <div class="col-lg-2 col-md-2 m-0 p-0 col-9 mx-5 d-inline-block">
-                <h4>Телефоны:</h4 <b>+998 71 200 01 70</b><br>
-                <b>+998 94 685 15 18</b>
+            <div class="col-lg-2 col-md-2 m-0 p-0 col-9 ml-4 d-inline-block">
+                <h4>Телефоны:</h4 <b>+998 91 601 32 46</b><br>
+                <!-- <b>+998 94 685 15 18</b> -->
             </div>
-            <div class="col-lg-2 col-md-2 m-0 p-0 col-9 mx-5 d-inline-block">
+            <div class="col-lg-3 col-md-2 m-0 p-0 col-9 ml-4 d-inline-block">
                 <h4>Email:</h4 <p>contact@tokiomedia.uz</p>
             </div>
         </div>
-        <div class="google-map" data-aos="fade-up" data-aos-delay="900">
+        <div class="google-map" data-aos="fade-up" data-aos-delay="500">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25394.929256775304!2d69.2920734930682!3d41.326207789746036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b454cf51035%3A0xc1f97becd64cf681!2z0JzQtdGH0LXRgtGMINCc0LjQvdC-0YA!5e0!3m2!1sru!2s!4v1639228814298!5m2!1sru!2s"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5991.256356155718!2d69.33567600000002!3d41.338698!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2558093031ee0aa4!2zNDHCsDIwJzE5LjMiTiA2OcKwMjAnMDguNCJF!5e0!3m2!1sru!2s!4v1639655974864!5m2!1sru!2s"
                 height="350" frameborder="0" style="border:0;width: 100%;" allowfullscreen=""></iframe>
         </div>
     </section>
@@ -316,9 +339,9 @@
 
                 <div class="d-flex justify-content-center mx-auto col-lg-4 col-md-4 col-12">
                     <ul class="social-icon ml-lg-3">
-                        <li><a href="https://fb.com/" class="fa fa-facebook"></a></li>
-                        <li><a href="https://t.me/" class="fa fa-telegram"></a></li>
-                        <li><a href="https://instagram.com/" class="fa fa-instagram"></a></li>
+                        <li><a href="https://www.facebook.com/nurinvest.uz" class="fa fa-facebook"></a></li>
+                        <li><a href="https://t.me/nurinvest" class="fa fa-telegram"></a></li>
+                        <li><a href="https://www.instagram.com/nurinvest.uz/" class="fa fa-instagram"></a></li>
                     </ul>
                 </div>
                 <div class="d-flex justify-content-center col-lg-4 col-md-3 col-12">
@@ -356,19 +379,19 @@
                 from_name: from_name,
                 message: message
             };
-            if(document.getElementById("fromName").value != "" && document.getElementById("toName").value != "" && document.getElementById("message").value != ""){
+            if (document.getElementById("fromName").value != "" && document.getElementById("toName").value != "" && document.getElementById("message").value != "") {
                 emailjs.send('service_t2hycyn', 'template_i7hrgtt', templateParams)
-                .then(function (response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    document.getElementById("toName").value = ""
-                    document.getElementById("fromName").value = ""
-                    document.getElementById("message").value = ""
-                    alert("Sending Succesfully")
-                }, function (error) {
-                    console.log('FAILED...', error);
-                });
+                    .then(function (response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                        document.getElementById("toName").value = ""
+                        document.getElementById("fromName").value = ""
+                        document.getElementById("message").value = ""
+                        alert("Sending Succesfully")
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
             }
-            else{
+            else {
                 alert("Please fill out the application")
             }
         }
@@ -392,14 +415,13 @@
             }
         })
         $('.owl-carousel').trigger('play.owl.autoplay', [4000])
-        function isHidden() {
-            var x = document.getElementById('sertificate');
-            if (x.style.display === 'none') {
-                x.style.display = 'flex';
-            } else {
-                x.style.display = 'none';
-            }
-        }
+        $('.customNextBtn').click(function () {
+            $('.owl-carousel').trigger('next.owl.carousel');
+        })
+        // Go to the previous item
+        $('.customPrevBtn').click(function () {
+            $('.owl-carousel').trigger('prev.owl.carousel');
+        })
     </script>
 
 </body>
