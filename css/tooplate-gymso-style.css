@@ -434,7 +434,7 @@ overflow: hidden;
      CLASS               
   -----------------------------------------*/
   .service {
-    background-image: linear-gradient(180deg, #03989E, #F8F9FA);
+    background-image: linear-gradient(180deg,#F8F9FA, #03989E);
   }
     .class-thumb:nth-child(1){
     max-width: 270px;
@@ -581,7 +581,7 @@ color: rgb(0, 0, 0);
   -----------------------------------------*/
 
   .schedule {
-    background: var(--dark-color);
+    background-color: #03989E !important;
   }
 
   .schedule-table {
