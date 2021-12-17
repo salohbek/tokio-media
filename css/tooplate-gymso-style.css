@@ -203,7 +203,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   a:hover, 
   a:active, 
   a:focus {
-    color: var(--white-color);
+    color: #D4AF37;
     outline: none;
     text-decoration: none;
   }
@@ -296,10 +296,11 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
   .nav-item .nav-link.active{
     font-weight: bolder;
-    border-bottom: 2px solid white;
-  }
+    color: #eedf6f;
+      }
   .nav-item .nav-link:hover {
     font-weight: bolder;
+    border-bottom: 2px solid #ffffff;
   }
 
   .navbar .social-icon li a {
@@ -371,7 +372,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     top: 8px;
   }
   #home{
-    background: url("../images/class/Technology.jpg");
+    background: url("../images/class/tokiowalpaper.jpg");
     background-repeat: no-repeat;
 background-size:100% 100%;
   }
@@ -386,7 +387,7 @@ background-size:100% 100%;
 }
 #portfolio .owl-item{
   /* margin: 0 50px 0 50px; */
-  width: 15% !important;
+  width: 14% !important;
   height: 100%;
 }
 #portfolio .owl-item .item{
@@ -395,16 +396,39 @@ background-size:100% 100%;
   height: 300px;
 }
 #portfolio .owl-item .item iframe{
+  background-image: url('../images/class/YouTube.jpg');
+  background-size: 100%;
   width: 100%;
   height: 90%;
+}
+.prevnext{
+  position: absolute;
+  z-index: 23;
+  transform: translateY(100px);
+  overflow: hidden;
+}
+#prevbutton{
+  border: 2px solid #03989E !important;
+padding: 30px 20px 30px 40px;
+transform: translateX(-40px);
+border-radius: 50%;
+background-color: white;
 } 
+#nextbutton{
+  border: 2px solid #03989E !important;
+transform: translateX(40px);
+padding: 30px 40px 30px 20px;
+  border-radius: 50%;
+
+}
   /*---------------------------------------
      HERO              
   -----------------------------------------*/
   #contact{
     padding-top: 60px;
     overflow: hidden;  
-    background-image: linear-gradient(180deg, #03989E,#FFFFFF);
+    background: #03989E;
+    padding: 7rem 0 0 0;
   }
   .hero {
     /* background-image: url('../images/tokyo.jpg'); */
@@ -489,7 +513,7 @@ overflow: hidden;
     margin-left: 4px;
   }
   .blog_index a:hover{
-color: rgb(0, 0, 0);
+color: #dbb844;
   }
   .blog_img{
     width: 100%;
@@ -506,8 +530,8 @@ color: rgb(0, 0, 0);
     border-radius: 3px;
   }
   .blog_card div a:hover{
-    color: rgb(0, 0, 0);
-    border: 1px solid black;
+    color: #D4AF37;
+    border: 1px solid #D4AF37;
   }
   .blog_card div:nth-child(2){
     box-sizing: border-box;
@@ -523,16 +547,25 @@ color: rgb(0, 0, 0);
     padding: 0;
   }
   @media only screen and (max-width: 768px) {
+    .employee .item{
+      width: 28%;
+    }
     .blog_card {
       width: 80%;
     }
   }
   @media only screen  and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .employee .item{
+      width: 22%;
+    }
     .blog_card {
       width: 40%;
     }
   }
   @media only screen and (min-device-width : 1025px) and (max-device-width : 1920px) {
+    .employee .item{
+      width: 14%;
+    }
     .blog_card {
       width: 30%;
     }
@@ -667,7 +700,7 @@ color: rgb(0, 0, 0);
     width: 50%;
   }
   .sertificate-show:hover{
-    color: rgb(0, 0, 0);
+    color: #D4AF37;
     border-bottom: 1px solid white;
     cursor: pointer;
   }
@@ -752,6 +785,7 @@ color: rgb(0, 0, 0);
   .site-footer {
     border-top: 1px solid #efebeb;
     padding: 3rem 0;
+    background-color: #03989E;
   }
 
   .site-footer a {
@@ -768,7 +802,18 @@ color: rgb(0, 0, 0);
     color: var(--primary-color);
   }
 
-
+#ourPortfolio{
+  box-sizing: border-box;
+}
+#ourPortfolio .item{
+  height: 235px;
+padding: 10px;
+}
+#ourPortfolio .item iframe{
+  width: 100%;
+  height: 100%;
+padding: 10px;
+}
   /*---------------------------------------
      SOCIAL ICON              
   -----------------------------------------*/
@@ -789,6 +834,9 @@ z-index: -2;
   }
 
   .social-icon li .fa-facebook {
+    padding: 8px 12px 8px 12px;
+    background-color: white;
+    border-radius: 50%;
     text-decoration: none;
     display: inline-block;
     color: #1f2bd1;
@@ -798,6 +846,9 @@ z-index: -2;
     text-align: center;
   }
   .social-icon li .fa-telegram {
+    padding: 8px;
+    background-color: white;
+    border-radius: 50%;
     text-decoration: none;
     display: inline-block;
     color: #289fee;
@@ -807,6 +858,9 @@ z-index: -2;
     text-align: center;
   }
   .social-icon li .fa-instagram {
+    padding: 8px;
+    background-color: white;
+    border-radius: 50%;
     text-decoration: none;
     display: inline-block;
     color: #833AB4;
@@ -816,7 +870,7 @@ z-index: -2;
     text-align: center;
   }
   .social-icon li a:hover {
-    color: rgb(0, 0, 0);
+    color: #D4AF37;
   }
 
 
