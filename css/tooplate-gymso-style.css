@@ -550,6 +550,11 @@ color: #dbb844;
     .employee .item{
       width: 28%;
     }
+    .card_service .blog_card{
+      height: 470px;
+      font-size: small;
+      width: 80%;
+    }
     .blog_card {
       width: 80%;
     }
@@ -558,6 +563,13 @@ color: #dbb844;
     .employee .item{
       width: 22%;
     }
+    .card_service .blog_card{
+      width: 100%;
+      height: 500px;
+    }
+    .card_service .blog_card div{
+      font-size: 8px;
+    }
     .blog_card {
       width: 40%;
     }
@@ -565,6 +577,11 @@ color: #dbb844;
   @media only screen and (min-device-width : 1025px) and (max-device-width : 1920px) {
     .employee .item{
       width: 14%;
+    }
+    .card_service .blog_card{
+      width: 30%;
+      font-size: 14px;
+      height: 500px;  
     }
     .blog_card {
       width: 30%;
@@ -762,7 +779,53 @@ color: #dbb844;
   button#submit-button:hover {
     background: var(--dark-color);
   }
-
+  .service_slug .col-4{
+    margin: 50px 10px 50px 20px;
+  }
+  .service_slug .col-4 a{
+    color: white;
+  }
+  .service_slug .col-4 a:hover{
+    color: #D4AF37;
+  }
+  /* .blog_service .service_a3{
+    transform: translateX(40px);
+  } */
+  .card_service .blog_card a{
+    display: none;
+  }
+  .card_service .blog_card:hover a{
+    display: block;
+  }
+  .card_service{
+    box-sizing: border-box;
+  }
+  .card_service .blog_card{
+    margin: 20px 10px 20px 10px;
+    padding: 20px 25px 0 25px;
+    border: 1px solid white;
+    border-radius: 2px 50px 2px 2px;
+  }
+  .card_service .blog_card ul{
+    padding: 0;
+  }
+  .card_service .blog_card ul li{
+    list-style-type: none;
+  }
+  .smm_button{
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #fafafa;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .smm_button:hover{
+    background-color: transparent;
+    color: #D4AF37;
+    border: 2px solid #D4AF37;
+    padding: 5px;
+    border-radius: 10px;
+  }
   .contact h2 + p {
     max-width: 90%;
   }
