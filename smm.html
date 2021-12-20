@@ -39,7 +39,7 @@
                 <span>TikTok </span><span class="text-danger mx-1">/</span>
                 <span>VKontakte </span>
             </div>
-            <button class="m-3 smm_button">Узнать подробнее
+            <button class="m-3 smm_button" id="myBtn">Узнать подробнее
             </button>
             <div class="row service_slug" style="box-sizing: border-box;">
                 <div class="col-lg-2 col-md-2 col-4"><a style="border-bottom: 2px solid white;" href="smm.html">SMM</a>
@@ -89,29 +89,31 @@
                             <li>-3 видео моушен для рекламы</li>
                         </ul>
                     </div>
-                    <div style="height: 10%;"><a  class="smm_button" style="width: 90px;padding:2px 2px 2px 6px;" href="#">Оставить заявку</a></div>
+                    <div style="height: 10%;"><a class="smm_button" style="width: 90px;padding:2px 2px 2px 6px;"
+                            href="#">Оставить заявку</a></div>
                 </div>
                 <div class="blog_card">
                     <div style="height: 85%;">
-                    <h5 class="font-weight-bold">Powerfull business
-                        (Мощный бизнес)</h5>
-                    <ul>
-                        <li>-Регистрация бренда в соц. сетях</li>
-                        <li>-Оформление групп: дизайн аватара,
-                            обложки сообщества, шаблоны публикаций</li>
-                        <li>-Разработка уникального дизайна</li>
-                        <li>-Анализ 5-ти конкурентов по нише</li>
-                        <li>-Размещение постов (до 20+ в месяц)</li>
-                        <li>-Проведение конкурсов</li>
-                        <li>-Аналитика и отчетность</li>
-                        <li>-Проработка целевой аудитории</li>
-                        <li>-Настройка таргетинга</li>
-                        <li>-Создание сторисов (16 шт.)</li>
-                        <li>-Создание контент-плана (на 60 дней)</li>
-                        <li>-5 видео моушен для рекламы</li>
-                    </ul>
+                        <h5 class="font-weight-bold">Powerfull business
+                            (Мощный бизнес)</h5>
+                        <ul>
+                            <li>-Регистрация бренда в соц. сетях</li>
+                            <li>-Оформление групп: дизайн аватара,
+                                обложки сообщества, шаблоны публикаций</li>
+                            <li>-Разработка уникального дизайна</li>
+                            <li>-Анализ 5-ти конкурентов по нише</li>
+                            <li>-Размещение постов (до 20+ в месяц)</li>
+                            <li>-Проведение конкурсов</li>
+                            <li>-Аналитика и отчетность</li>
+                            <li>-Проработка целевой аудитории</li>
+                            <li>-Настройка таргетинга</li>
+                            <li>-Создание сторисов (16 шт.)</li>
+                            <li>-Создание контент-плана (на 60 дней)</li>
+                            <li>-5 видео моушен для рекламы</li>
+                        </ul>
                     </div>
-                    <div style="height: 10%;"><a  class="smm_button" style="width: 90px;padding:2px 2px 2px 6px;" href="#">Оставить заявку</a></div>
+                    <div style="height: 10%;"><a class="smm_button" style="width: 90px;padding:2px 2px 2px 6px;"
+                            href="#">Оставить заявку</a></div>
                 </div>
                 <div class="blog_card">
                     <h5 class="font-weight-bold">ТП “Турбо”
@@ -134,7 +136,8 @@
                         <li>-Создание контент-плана (на 90 дней)</li>
                         <li>-7 видео моушен для рекламы</li>
                     </ul>
-                    <div style="height: 10%;"><a  class="smm_button" style="width: 90px;padding:2px 2px 2px 6px;" href="#">Оставить заявку</a></div>
+                    <div style="height: 10%;"><a class="smm_button" style="width: 90px;padding:2px 2px 2px 6px;"
+                            href="#">Оставить заявку</a></div>
                 </div>
             </div>
         </div>
@@ -190,9 +193,101 @@
         </div>
     </footer>
 
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="mx-auto col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="700">
+                    <label>ФИО</label><br>
+                    <input class="input_app" placeholder="введите ФИО..." type="text" name="from_name" id="fromName"><br><br>
+                    <label>Телефонный номер</label><br>
+                    <input class="input_app" placeholder="901234567" type="text" name="to_name" id="toName"><br><br>
+                    <label>Сообщение</label><br>
+                    <textarea class="input_app" placeholder="введите cообщение..." name="message"
+                        id="message"></textarea><br><br>
+                        <input class="form-check-input" type="checkbox" name="SMM" id="SMMcheck">
+                        <label class="mr-4 form-check-label" for="SMMcheck">SMM</label>
+                        <input type="checkbox" name="WEB" id="BRANDcheck">
+                        <label class="mr-4" for="BRANDcheck">Branding</label>
+                        <input type="checkbox" name="MEDIA" id="WEBcheck">
+                        <label class="mr-4" for="WEBcheck">WEB</label>
+                        <button class="sendEmail" onclick="sendEmail()">Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <!-- Modal -->
 
     <!-- SCRIPTS -->
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_fCuxc771snG5gURcx2VMd"); //please encrypted user id for malicious attacks
+        })();
+        //set the parameter as per you template parameter[https://dashboard.emailjs.com/templates]
+        function sendEmail() {
+            let to_name = document.getElementById("toName").name;
+            let from_name = document.getElementById("fromName").name;
+            let message = document.getElementById("message").name;
+            let smm = document.getElementById("SMMcheck");
+            if(smm.checked){
+                smm=smm.value
+            }else{smm=null}
+            let branding = document.getElementById("BRANDcheck");
+            if(branding.checked){
+                branding=branding.value
+            }else{branding=null}
+            let web = document.getElementById("WEBcheck");
+            if(web.checked ){
+                web=web.value
+            }else{web=null}
+            var templateParams = {
+                to_name: to_name,
+                from_name: from_name,
+                message: message,
+                smm: smm,
+                branding: branding,
+                web: web
+            };
+            if (document.getElementById("fromName").value != "" && document.getElementById("toName").value != "" && document.getElementById("message").value != "") {
+                emailjs.send('service_t2hycyn', 'template_ukkxexf', templateParams)
+                    .then(function (response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                        document.getElementById("toName").value = ""
+                        document.getElementById("fromName").value = ""
+                        document.getElementById("message").value = ""
+                        alert("Sending Succesfully")
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            }
+            else {
+                alert("Please fill out the application")
+            }
+        }
+
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/aos.js"></script>
