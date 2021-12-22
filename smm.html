@@ -39,7 +39,7 @@
                 <span>TikTok </span><span class="text-danger mx-1">/</span>
                 <span>VKontakte </span>
             </div>
-            <button class="m-3 smm_button" id="myBtn">Узнать подробнее
+            <button class="m-3 smm_button" style="width: 160px;" id="myBtn">Узнать подробнее
             </button>
             <div class="row service_slug" style="box-sizing: border-box;">
                 <div class="col-lg-2 col-md-2 col-4"><a style="border-bottom: 2px solid white;" href="smm.html">SMM</a>
@@ -73,7 +73,7 @@
             </div>
             <h2 class="ml-4 mt-5">Тарифы SMM услуги:</h2>
             <div class="row card_service">
-                <div class="blog_card">
+                <div class="blog_card" >
                     <div style="height: 85%;">
                         <h5 class="font-weight-bold">Acceleration
                             (Ускоренный)</h5>
@@ -89,10 +89,10 @@
                             <li>-3 видео моушен для рекламы</li>
                         </ul>
                     </div>
-                    <div style="height: 10%;"><a class="smm_button" style="width: 90px;padding:2px 2px 2px 6px;"
+                    <div style="height: 10%;"><a id="branding_button1" class="smm_button"
                             href="#">Оставить заявку</a></div>
                 </div>
-                <div class="blog_card">
+                <div class="blog_card" >
                     <div style="height: 85%;">
                         <h5 class="font-weight-bold">Powerfull business
                             (Мощный бизнес)</h5>
@@ -112,10 +112,10 @@
                             <li>-5 видео моушен для рекламы</li>
                         </ul>
                     </div>
-                    <div style="height: 10%;"><a class="smm_button" style="width: 90px;padding:2px 2px 2px 6px;"
+                    <div style="height: 10%;"><a id="branding_button2" class="smm_button"
                             href="#">Оставить заявку</a></div>
                 </div>
-                <div class="blog_card">
+                <div class="blog_card" >
                     <h5 class="font-weight-bold">ТП “Турбо”
                         (Наибыстрейший)</h5>
                     <ul>
@@ -136,7 +136,7 @@
                         <li>-Создание контент-плана (на 90 дней)</li>
                         <li>-7 видео моушен для рекламы</li>
                     </ul>
-                    <div style="height: 10%;"><a class="smm_button" style="width: 90px;padding:2px 2px 2px 6px;"
+                    <div style="height: 10%;"><a id="branding_button3" class="smm_button"
                             href="#">Оставить заявку</a></div>
                 </div>
             </div>
@@ -209,11 +209,11 @@
                     <label>Сообщение</label><br>
                     <textarea class="input_app" placeholder="введите cообщение..." name="message"
                         id="message"></textarea><br><br>
-                        <input class="form-check-input" type="checkbox" name="SMM" id="SMMcheck">
-                        <label class="mr-4 form-check-label" for="SMMcheck">SMM</label>
-                        <input type="checkbox" name="WEB" id="BRANDcheck">
+                        <input class="form-check-input ml-2" type="checkbox" name="SMM" id="SMMcheck">
+                        <label class="mx-4 form-check-label" for="SMMcheck">SMM</label>
+                        <input class="form-check-input" type="checkbox" name="WEB" id="BRANDcheck">
                         <label class="mr-4" for="BRANDcheck">Branding</label>
-                        <input type="checkbox" name="MEDIA" id="WEBcheck">
+                        <input class="form-check-input" type="checkbox" name="MEDIA" id="WEBcheck">
                         <label class="mr-4" for="WEBcheck">WEB</label>
                         <button class="sendEmail" onclick="sendEmail()">Оставить заявку</button>
                 </div>
@@ -227,8 +227,21 @@
     <script>
         var modal = document.getElementById("myModal");
         var btn = document.getElementById("myBtn");
+        var btn2 = document.getElementById("branding_button2");
+        var btn1 = document.getElementById("branding_button1");
+        var btn3 = document.getElementById("branding_button3");
+
         var span = document.getElementsByClassName("close")[0];
         btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        btn1.onclick = function () {
+            modal.style.display = "block";
+        }
+        btn2.onclick = function () {
+            modal.style.display = "block";
+        }
+        btn3.onclick = function () {
             modal.style.display = "block";
         }
         span.onclick = function () {
@@ -278,6 +291,7 @@
                         document.getElementById("fromName").value = ""
                         document.getElementById("message").value = ""
                         alert("Sending Succesfully")
+                        document.getElementById("myModal").style.display = "none";
                     }, function (error) {
                         console.log('FAILED...', error);
                     });

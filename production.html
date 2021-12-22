@@ -189,7 +189,34 @@
             </div>
         </div>
     </footer>
+    <div id="myModal" class="modal">
 
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="mx-auto col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="700">
+                    <label>ФИО</label><br>
+                    <input class="input_app" placeholder="введите ФИО..." type="text" name="from_name" id="fromName"><br><br>
+                    <label>Телефонный номер</label><br>
+                    <input class="input_app" placeholder="901234567" type="text" name="to_name" id="toName"><br><br>
+                    <label>Сообщение</label><br>
+                    <textarea class="input_app" placeholder="введите cообщение..." name="message"
+                        id="message"></textarea><br><br>
+                        <input class="form-check-input" type="checkbox" name="SMM" id="SMMcheck">
+                        <label class="mr-4 form-check-label" for="SMMcheck">SMM</label>
+                        <input type="checkbox" name="WEB" id="BRANDcheck">
+                        <label class="mr-4" for="BRANDcheck">Branding</label>
+                        <input type="checkbox" name="MEDIA" id="WEBcheck">
+                        <label class="mr-4" for="WEBcheck">WEB</label>
+                        <button class="sendEmail" onclick="sendEmail()">Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <!-- Modal -->
 
     <!-- SCRIPTS -->

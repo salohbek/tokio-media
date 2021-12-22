@@ -564,7 +564,7 @@ color: #dbb844;
       width: 22%;
     }
     .card_service .blog_card{
-      width: 100%;
+      width: 70%;
       height: 500px;
     }
     .card_service .blog_card div{
@@ -587,23 +587,36 @@ color: #dbb844;
       width: 30%;
     }
   }
-  .form-check-input[type=checkbox]:checked {
-    --checkbox-width: 1.125rem;
-    --checkbox-bg: white;
+  .form-check-input[type=checkbox]:checked{
+    --checkbox-bg: #03989E;
     --checkbox-radius: 4px;
-    --checkbox-border-color: red;
-    --checkbox-hover-border-color: red;
-    --checkbox-checked-bg: #e7eaee;
+    --checkbox-border-color: #24bef7;
+    --checkbox-hover-border-color: #a9b1bc;
+    --checkbox-checked-bg: #4ec0e9;
     --checkbox-disabled-bg: #a9b1bc;
-    --checkbox-disabled-checked-bg: red;
+    --checkbox-disabled-checked-bg: #a9b1bc;
     width: var(--checkbox-width);
     height: var(--checkbox-width);
-    position: relative;
-    background: #4ec0e9;
-    color: #833AB4;
     border: none;
-    border-radius: var(--checkbox-radius);
     transition: .3s;
+    margin-top: 7px;
+  }
+  .form-check-input[type=checkbox]::before {
+    position: absolute;
+    content: url("../images/class/check.svg");
+    transform: scale(0);
+  }
+  .form-check-input[type=checkbox]::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: var(--checkbox-bg);
+    border-radius: inherit;
+    box-shadow: inset 0 0 0 1px var(--checkbox-border-color);
+    transition: .2s;
   }
   .modal {
     display: none; /* Hidden by default */
@@ -910,9 +923,11 @@ color: #dbb844;
     color: #ffffff;
     border: 2px solid #fafafa;
     padding: 5px;
+    width: 130px;
     border-radius: 10px;
   }
   .smm_button:hover{
+    width: 130px;
     background-color: transparent;
     color: #D4AF37;
     border: 2px solid #D4AF37;
