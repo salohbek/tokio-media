@@ -465,9 +465,9 @@ overflow: hidden;
   .service {
     background-image: linear-gradient(180deg,#F8F9FA, #03989E);
   }
-    .class-thumb:nth-child(1){
+    .class-thumbS{
     max-width: 270px;
-    background-image: url("../images/class/smm.png");
+    background-image: url("../images/class/our_servises_smm.jpg");
     width: 100%;
     min-height: 280px;
     position: relative;
@@ -475,7 +475,7 @@ overflow: hidden;
     overflow: hidden;
     color:rgb(255, 255, 254);
   }
-  .class-thumb:nth-child(2){
+  .class-thumbB{
     max-width: 270px;
     background-image: url("../images/class/smm.png");
     width: 100%;
@@ -485,9 +485,9 @@ overflow: hidden;
     overflow: hidden;
     color:rgb(255, 255, 255);
   }
-  .class-thumb:nth-child(3){
+  .class-thumbW{
     max-width: 270px;
-    background-image: url("../images/class/smm.png");
+    background-image: url("../images/class/our_servises_web.jpg");
     width: 100%;
     min-height: 280px;
     position: relative;
@@ -495,9 +495,9 @@ overflow: hidden;
     overflow: hidden;
     color:rgb(255, 255, 255);
   }
-  .class-thumb:nth-child(4){
+  .class-thumbP{
     max-width: 270px;
-    background-image: url("../images/class/smm.png");
+    background-image: url("../images/class/our_servises_production.jpg");
     width: 100%;
     min-height: 280px;
     position: relative;
