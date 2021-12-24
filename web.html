@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="/images/logo3-bg.ico">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/tooplate-gymso-style.css">
@@ -151,7 +152,7 @@
                     <label>Сообщение</label><br>
                     <textarea style="background: #baf0f1;" class="input_app" placeholder="введите cообщение..." name="message"
                         id="message"></textarea><br><br>
-                    <button class="sendEmail" onclick="sendEmail()">Оставить заявку</button>
+                    <button class="sendEmail" onclick="sendMail()">Оставить заявку</button>
                 </div>
 
 
@@ -258,12 +259,12 @@
             <div class="modal-body">
                 <div class="mx-auto col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="700">
                     <label>ФИО</label><br>
-                    <input class="input_app" placeholder="введите ФИО..." type="text" name="from_name" id="fromName"><br><br>
+                    <input class="input_app" placeholder="введите ФИО..." type="text" name="from_name" id="from_name"><br><br>
                     <label>Телефонный номер</label><br>
-                    <input class="input_app" placeholder="901234567" type="text" name="to_name" id="toName"><br><br>
+                    <input class="input_app" placeholder="901234567" type="text" name="to_name" id="to_name"><br><br>
                     <label>Сообщение</label><br>
                     <textarea class="input_app" placeholder="введите cообщение..." name="message"
-                        id="message"></textarea><br><br>
+                        id="messages"></textarea><br><br>
                         <input class="form-check-input ml-2" type="checkbox" name="SMM" id="SMMcheck">
                         <label class="mx-4 form-check-label" for="SMMcheck">SMM</label>
                         <input class="form-check-input" type="checkbox" name="WEB" id="BRANDcheck">
@@ -321,25 +322,57 @@
     </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="text/javascript">
+        (function () {
+            emailjs.init("user_fCuxc771snG5gURcx2VMd"); //please encrypted user id for malicious attacks
+        })();
+        //set the parameter as per you template parameter[https://dashboard.emailjs.com/templates]
+        function sendMail() {
+            let to_name = document.getElementById("toName").value;
+            let from_name = document.getElementById("fromName").value;
+            let message = document.getElementById("message").value;
+            var templateParams = {
+                to_name: to_name,
+                from_name: from_name,
+                message: message
+            };
+            if (document.getElementById("fromName").value != "" && document.getElementById("toName").value != "" && document.getElementById("message").value != "") {
+                emailjs.send('service_t2hycyn', 'template_i7hrgtt', templateParams)
+                    .then(function (response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                        document.getElementById("toName").value = ""
+                        document.getElementById("fromName").value = ""
+                        document.getElementById("message").value = ""
+                        alert("Sending Succesfully")
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            }
+            else {
+                alert("Please fill out the application")
+            }
+        }
+
+    </script>
+   <script type="text/javascript">
             (function () {
                 emailjs.init("user_fCuxc771snG5gURcx2VMd"); //please encrypted user id for malicious attacks
             })();
         //set the parameter as per you template parameter[https://dashboard.emailjs.com/templates]
         function sendEmail() {
-            let to_name = document.getElementById("toName").name;
-            let from_name = document.getElementById("fromName").name;
-            let message = document.getElementById("message").name;
+            let to_name = document.getElementById("to_name").value;
+            let from_name = document.getElementById("from_name").value;
+            let message = document.getElementById("messages").value;
             let smm = document.getElementById("SMMcheck");
             if (smm.checked) {
-                smm = smm.value
+                smm = smm.name
             } else { smm = null }
             let branding = document.getElementById("BRANDcheck");
             if (branding.checked) {
-                branding = branding.value
+                branding = branding.name
             } else { branding = null }
             let web = document.getElementById("WEBcheck");
             if (web.checked) {
-                web = web.value
+                web = web.name
             } else { web = null }
             var templateParams = {
                 to_name: to_name,
@@ -349,13 +382,13 @@
                 branding: branding,
                 web: web
             };
-            if (document.getElementById("fromName").value != "" && document.getElementById("toName").value != "" && document.getElementById("message").value != "") {
+            if (document.getElementById("from_name").value != "" && document.getElementById("to_name").value != "" && document.getElementById("messages").value != "") {
                 emailjs.send('service_t2hycyn', 'template_ukkxexf', templateParams)
                     .then(function (response) {
                         console.log('SUCCESS!', response.status, response.text);
-                        document.getElementById("toName").value = ""
-                        document.getElementById("fromName").value = ""
-                        document.getElementById("message").value = ""
+                        document.getElementById("to_name").value = ""
+                        document.getElementById("from_name").value = ""
+                        document.getElementById("messages").value = ""
                         alert("Sending Succesfully")
                         document.getElementById("myModal").style.display = "none";
                     }, function (error) {
