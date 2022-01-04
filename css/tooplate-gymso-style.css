@@ -551,7 +551,7 @@ color: #dbb844;
   }
   @media only screen and (max-width: 768px) {
     .employee .item{
-      width: 28%;
+      width: 35%;
     }
     .card_service .blog_card{
       height: 470px;
@@ -579,7 +579,7 @@ color: #dbb844;
   }
   @media only screen and (min-device-width : 1025px) and (max-device-width : 1920px) {
     .employee .item{
-      width: 14%;
+      width: 17%;
     }
     .card_service .blog_card{
       width: 30%;
@@ -980,7 +980,7 @@ color: #dbb844;
   box-sizing: border-box;
 }
 #ourPortfolio .item{
-  height: 235px;
+  height: 300px;
 padding: 10px;
 }
 #ourPortfolio .item iframe{
